@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-import com.nithin.driver.Driver;
+import com.nithin.driver.DriverManager;
 
 public final class HomePageTest extends BaseTests {
 
@@ -15,7 +15,7 @@ public final class HomePageTest extends BaseTests {
 	@Test
 	public void test2() {
 
-		Driver.driver.findElement(By.name("q")).sendKeys("Pen", Keys.ENTER);
+		DriverManager.getDriver().findElement(By.name("q")).sendKeys("Pen", Keys.ENTER);
 
 	}
 
